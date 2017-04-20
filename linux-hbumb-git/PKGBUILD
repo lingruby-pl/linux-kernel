@@ -73,7 +73,7 @@ license=('GPL2')
 options=('!strip')
 makedepends=('kmod' 'inetutils' 'bc' 'libelf')
 _bfqrel=v7r11
-_bfqver=v8r8
+_bfqver=v8r10
 _bfqpath="http://algo.ing.unimo.it/people/paolo/disk_sched/patches/4.10.0-${_bfqver}"
 #_bfqpath="https://pf.natalenko.name/mirrors/bfq/4.10.0-${_bfqver}"
 _gcc_patch="enable_additional_cpu_optimizations_for_gcc_v4.9+_kernel_v3.15+.patch"
@@ -90,9 +90,6 @@ source=('git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable-rc.gi
         '90-linux.hook'
          # standard config files for mkinitcpio ramdisk
         'linux.preset'
-        # patches from https://github.com/linusw/linux-bfq/commits/bfq-v8
-        '0005-BFQ-update-to-v8r9.patch'
-        '0006-BFQ-update-to-v8r10.patch'
 	### UKSM ###
         "http://kerneldedup.org/download/uksm/0.1.2.6/uksm-0.1.2.6-for-v4.10.patch"
 	### MuQSS ###
@@ -113,7 +110,7 @@ prepare() {
             
     ### Patch source with BFQ
         msg "Patching source with BFQ patches"
-        for p in "${srcdir}"/000{1,2,3,4,5,6}-*BFQ*.patch; do
+        for p in "${srcdir}"/000{1,2,3,4}-*BFQ*.patch; do
         msg " $p"
         patch -Np1 -i "$p"
         done
