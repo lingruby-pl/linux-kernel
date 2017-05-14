@@ -45,7 +45,7 @@ _NUMAdisable=y
 # This PKGBUILD will call it directly to probe all the modules you have logged!
 #
 # More at this wiki page ---> https://wiki.archlinux.org/index.php/Modprobed_db
-_localmodcfg=
+_localmodcfg=y
 
 # Use the current kernel's .config file
 # Enabling this option will use the .config of the RUNNING kernel rather than
@@ -65,7 +65,7 @@ _CFQ_disable=y
 pkgbase=linux-hbumb-git
 # pkgname=('linux-hbumb-git-kernel' 'linux-hbumb-git-headers' 'linux-hbumb-git-docs')
 _srcname=linux-stable-rc
-pkgver=4.10.15.r130.g8aeb514d2f6a
+pkgver=4.10.16.r0.g6e8e99586919
 pkgrel=1
 arch=('x86_64')
 url="http://algo.ing.unimo.it"
@@ -492,7 +492,7 @@ sha512sums=('SKIP'
             '3147c29a542342eb2b60c4247edbffce0a35356e3b67a5471ed0e7555d3b9ec1b985e1090dc0b646bab129306962d094d7632e82b72fdbec3582b7461818e664'
             'ca1b3bcc36e4c61206f4c6fbfbda12eff5996353a3f0f82e972046cec35ff953abb1941ba7ee554db5e012cb61d981f7605b0cbbaad8c09ea9950fa9a3321773'
             '77d80d50d8c4323ed36fd2097ba9f6b49bb8d7cae59d32ffa76b309758a7e9f972d26fedd77046d88ce2691bb01a07909f8bdc34ba214414be3bc030ee31994d'
-            '9c65558476be3afb8208a79bde44dab051b5d272e4107ffb1f2f716bc53527d687bfb303c64b1a2cdb6a3613e2c20ee129e82cd4d846df41b27afca382eb919a'
+            '353c549ff4a55e75343514cbf68c1ebd16111bfd8bf6456844ffbbe6a0b9f08f0efad7b5da30ed24ede59c5c00c32e326725cef2dfdcf1990c9bb01cd4c4c239'
             'd6faa67f3ef40052152254ae43fee031365d0b1524aa0718b659eb75afc21a3f79ea8d62d66ea311a800109bed545bc8f79e8752319cd378eef2cbd3a09aba22'
             '2dc6b0ba8f7dbf19d2446c5c5f1823587de89f4e28e9595937dd51a87755099656f2acec50e3e2546ea633ad1bfd1c722e0c2b91eef1d609103d8abdc0a7cbaf'
             'f68af6f54c3a9d49722d6c240118ce727a1ddcad0b9e551efe96d44a476f2b95159196fb6f703435180d1d7d1435e5d756b2ed2fbafbd197fba49dca955fd1eb'
