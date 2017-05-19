@@ -7,4 +7,4 @@ hbumb = haswell-bfq-uksm-muqss-bld
 
 linux-hbum-git
 
-hbumb = haswell-bfq-uksm-muqss
+hbum = haswell-bfq-uksm-muqss
